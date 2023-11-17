@@ -155,9 +155,9 @@
   filter: grayscale(0);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .navbar-nav .dropdown-menu .dropdown-item {
-    font-size: 12px; /* Bagong font size */
+    font-size: 12px;
   }
 }
 
@@ -339,6 +339,7 @@
 
 
 
+/* services section */
 .services-content-main {
   padding: 2rem;
 }
@@ -374,8 +375,6 @@
 }
 
 
-
-/* services section */
 
 .services-row-contents {
   padding: 3rem;
@@ -430,7 +429,7 @@
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
   .tab {
     display: flex;
     flex-direction: column;
