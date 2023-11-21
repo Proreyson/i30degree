@@ -154,9 +154,23 @@
   filter: grayscale(0);
 }
 
+@media (max-width : 960px) {
+  #ULlist {
+    text-align: center !important;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 480px) {
   .navbar-nav .dropdown-menu .dropdown-item {
     font-size: 12px;
+  }
+  #ULlist {
+    text-align: center !important;
   }
 }
 
