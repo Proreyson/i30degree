@@ -12,7 +12,7 @@ import {
 
 export default function Links() {
   return (
-    <div className="bg-light" data-aos="zoom-in-left" data-aos-duration="3000">
+    <div className="bg-light">
       <section className="container pt-5 links" id="links">
         <div className="links-content">
           <div className="links-list row">

@@ -4,8 +4,8 @@ function Contact() {
       <div
         className="container mt-5"
         id="contact"
-        data-aos="zoom-in-right"
-        data-aos-duration="3000"
+        
+        
       >
         <div className="row">
           <div className="col-lg-7">

@@ -32,8 +32,6 @@ function Services() {
       <section
         className="services"
         id="services"
-        data-aos="zoom-in-left"
-        data-aos-duration="3000"
       >
         <div className="services-content">
           <div className="main">

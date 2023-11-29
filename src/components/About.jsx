@@ -12,8 +12,8 @@ function About() {
           <div className="row">
             <div
               className="col-md-6"
-              data-aos="zoom-in-left"
-              data-aos-duration="2000"
+              
+              
             >
               <h1 className="i30">i30 Degree</h1>
               <p className="i30p">
@@ -25,8 +25,8 @@ function About() {
             </div>
             <div
               className="col-md-6"
-              data-aos="zoom-in-right"
-              data-aos-duration="2000"
+              
+              
             >
               <h1 className="i30">Mission</h1>
               <p className="i30p">
