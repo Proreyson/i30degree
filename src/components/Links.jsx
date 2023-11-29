@@ -12,7 +12,7 @@ import {
 
 export default function Links() {
   return (
-    <div className="bg-light">
+    <div className="bg-light" data-aos="zoom-in-left" data-aos-duration="3000">
       <section className="container pt-5 links" id="links">
         <div className="links-content">
           <div className="links-list row">
@@ -41,15 +41,15 @@ export default function Links() {
                   <h4>Useful Links</h4>
 
                   <div className="other-links">
-                    <a href="">
+                    <a href="#hero">
                       <FontAwesomeIcon icon={faChevronRight} className="icon" />
                       Home
                     </a>
-                    <a href="">
+                    <a href="#about">
                       <FontAwesomeIcon icon={faChevronRight} className="icon" />
                       About us
                     </a>
-                    <a href="">
+                    <a href="#product">
                       <FontAwesomeIcon icon={faChevronRight} className="icon" />
                       Services
                     </a>

@@ -37,7 +37,6 @@ function MainLayout() {
         <Hero />
         <About />
         <Products />
-        {/* <Offers /> */}
         <Services />
         <Partners />
         <Contact />

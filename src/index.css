@@ -5,6 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-img {
   position: relative;
   animation: imgAnimation 2s linear infinite alternate;
@@ -297,10 +304,6 @@
   text-align: center;
 }
 
-.services-row-contents {
-  background-color: rgb(240, 240, 239);
-}
-
 .services-row-contents .tabcontent {
   display: none;
 }
@@ -384,6 +387,69 @@
     padding: 0;
   }
   .checklist span {
+    margin: 5px;
     font-size: 10px;
+  }
+  .services-row-contents .tabcontent img {
+    padding-top: 15px;
+    clip-path: none;
+  }
+}
+
+/* Engineering , Construction, Preventive and Fabrication Design */
+
+.services {
+  background: #f8f8f8;
+}
+
+.service {
+  padding: 5px;
+}
+
+.service-content {
+  background-color: #fff;
+  box-shadow: 2px 2px 30px rgba(34, 34, 34, 0.2);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.service-content:hover {
+  transform: translateY(-5px);
+}
+
+.service-content:hover > p {
+  color: rgb(8, 138, 252);
+}
+
+.service-title {
+  margin-top: 10px;
+}
+
+.service-title h3 {
+  color: rgba(1, 82, 152);
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  color: rgb(8, 138, 252);
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  background-color: #eee8e8;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  #productnav a {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .navbar-brand:hover {
+    background-color: transparent;
   }
 }

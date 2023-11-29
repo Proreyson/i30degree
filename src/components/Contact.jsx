@@ -1,20 +1,25 @@
 function Contact() {
   return (
     <>
-      <div className="container mt-5" id="contact">
+      <div
+        className="container mt-5"
+        id="contact"
+        data-aos="zoom-in-right"
+        data-aos-duration="3000"
+      >
         <div className="row">
-          <div
-            className="col-lg-7"
-           
-           
-          >
+          <div className="col-lg-7">
             <h5 className="m-3 fw-bold"> Get in touch, let's talk.</h5>
             <p className="m-3">
               Feel free to send me an{" "}
               <a
                 className="no-decoration"
                 href="mailto:j.marajas@gmail.com"
-                style={{ fontWeight: "bold", color: "rgb(8, 138, 252)", textDecoration: "none" }}
+                style={{
+                  fontWeight: "bold",
+                  color: "rgb(8, 138, 252)",
+                  textDecoration: "none",
+                }}
               >
                 email
               </a>{" "}
@@ -22,7 +27,11 @@ function Contact() {
               <a
                 className="no-decoration"
                 href="https://calendly.com/r3ys0ncarpio14/30min"
-                style={{ fontWeight: "bold", color: "rgb(8, 138, 252)", textDecoration: "none" }}
+                style={{
+                  fontWeight: "bold",
+                  color: "rgb(8, 138, 252)",
+                  textDecoration: "none",
+                }}
               >
                 free consultation
               </a>{" "}
@@ -92,7 +101,10 @@ function Contact() {
                     </div>
                     <button
                       type="button"
-                      style={{color: "rgb(8, 138, 252)", background: "rgb(8, 138, 252)"}}
+                      style={{
+                        color: "rgb(8, 138, 252)",
+                        background: "rgb(8, 138, 252)",
+                      }}
                       className="btn btn-secondary text-white"
                       formTarget="#"
                     >
@@ -104,12 +116,7 @@ function Contact() {
             </div>
           </div>
 
-          <div
-            className="col-lg-5"
-            
-            
-            
-          >
+          <div className="col-lg-5">
             <div style={{ position: "relative" }}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934.9573050063595!2d121.18714994453069!3d14.082217810937594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd69d02dcb4ffd%3A0x935d175c92aa1555!2si30%20Degree%20Engineering%20Services%20%26%20Industrial%20Supplies%20Trading!5e0!3m2!1sen!2sph!4v1699296682413!5m2!1sen!2sph"

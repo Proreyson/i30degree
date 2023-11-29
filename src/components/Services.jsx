@@ -13,7 +13,6 @@ function Services() {
     document.getElementById("defaultOpen").click();
   }, []);
 
-
   function openService(serName) {
     setActiveTab(serName);
     let i, tabcontent, tablinks;
@@ -28,16 +27,15 @@ function Services() {
     document.getElementById(serName).style.display = "block";
   }
 
-
   return (
     <>
-      <section className="services" id="services">
-        <div
-          className="services-content"
-          
-          
-          
-        >
+      <section
+        className="services"
+        id="services"
+        data-aos="zoom-in-left"
+        data-aos-duration="3000"
+      >
+        <div className="services-content">
           <div className="main">
             <h2 className="text-center fw-bold">Professional Offers</h2>
           </div>
