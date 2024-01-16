@@ -1,12 +1,63 @@
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function Contact() {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_t7l0xje",
+        "template_2r6v7dq",
+        {
+          from_name: form.name,
+          to_name: "Reyson",
+          from_email: form.email,
+          to_email: "r3ys0ncarpio14@gmail.com",
+          message: form.message,
+        },
+        "uPdaut_hwlauoeHSs"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          alert("Something went wrong");
+        }
+      );
+  };
+
   return (
     <>
-      <div
-        className="container mt-5"
-        id="contact"
-        
-        
-      >
+      <div className="container mt-5" id="contact">
         <div className="row">
           <div className="col-lg-7">
             <h5 className="m-3 fw-bold"> Get in touch, let's talk.</h5>
@@ -43,25 +94,30 @@ function Contact() {
                 {" "}
                 Have a question? Please enquire below{" "}
               </h2>
-              <form action="#">
+
+              <form ref={formRef} onSubmit={handleSubmit} action="#">
                 <div className="m-3">
                   <div className="form-floating mb-3">
                     <input
                       type="text"
+                      name="name"
                       className="form-control"
                       id="floatingInput"
-                      placeholder="name@example.com"
+                      onChange={handleChange}
+                      value={form.name}
                     />
-                    <label for="floatingInput">Name</label>
+                    <label htmlFor="floatingInput">Name</label>
                   </div>
                   <div className="form-floating">
                     <input
                       type="email"
+                      name="email"
                       className="form-control"
                       id="floatingPassword"
-                      placeholder="Name"
+                      onChange={handleChange}
+                      value={form.email}
                     />
-                    <label for="floatingPassword">Email address</label>
+                    <label htmlFor="floatingPassword">Email address</label>
                     <div id="emailHelp" className="form-text text-secondary">
                       We'll never share your email with anyone else.
                     </div>
@@ -70,9 +126,12 @@ function Contact() {
                   <div className="form-floating mt-3">
                     <textarea
                       className="form-control"
+                      name="message"
                       id="floatingTextarea"
+                      onChange={handleChange}
+                      value={form.message}
                     ></textarea>
-                    <label for="floatingTextarea">Comments</label>
+                    <label htmlFor="floatingTextarea">Your Message</label>
                   </div>
 
                   <div className="mt-3 text-secondary">
@@ -100,14 +159,14 @@ function Contact() {
                       </label>
                     </div>
                     <button
-                      type="button"
+                      type="submit"
                       style={{
                         color: "rgb(8, 138, 252)",
                         background: "rgb(8, 138, 252)",
                       }}
                       className="btn btn-secondary text-white"
-                      formTarget="#"
                     >
+                      {loading ? "Sending..." : ""}
                       Submit
                     </button>
                   </div>
