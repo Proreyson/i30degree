@@ -8,6 +8,9 @@ import Fab4 from "../assets/fab4.jpg";
 
 const services = [
   {
+    name: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fi30degree%2Fvideos%2F929811441866152%2F&show_text=false&width=357&t=0",
+  },
+  {
     name: Fab1,
   },
   {
@@ -17,7 +20,7 @@ const services = [
     name: Fab3,
   },
   {
-    name: Fab4,
+   name: Fab4,
   },
 ];
 
@@ -47,11 +50,24 @@ function Fabrication() {
                 <div className="service">
                   <div className="service-content">
                     <div className="service-title">
-                      <img
-                        src={name}
-                        alt=""
-                        style={{ maxWidth: "100%", height: "auto" }}
-                      />
+                      {name.includes("http") ? (
+                        <iframe
+                          src={name}
+                          width="357"
+                          height="476"
+                          style={{ border: "none", overflow: "hidden" }}
+                          scrolling="no"
+                          allowfullscreen="true"
+                          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                          allowFullScreen="true"
+                        ></iframe>
+                      ) : (
+                        <img
+                          src={name}
+                          alt=""
+                          style={{ maxWidth: "100%", height: "auto" }}
+                        />
+                      )}
                     </div>
                   </div>
                 </div>
@@ -59,6 +75,7 @@ function Fabrication() {
             ))}
           </div>
         ))}
+
       {showIcon && (
         <button className="btn m-1" onClick={handleToggleContent}>
           <FontAwesomeIcon icon={faX} />
