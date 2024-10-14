@@ -65,7 +65,7 @@ function Contact() {
               Feel free to send me an{" "}
               <a
                 className="no-decoration"
-                href="https://docs.google.com/forms/d/1AhKb3f8itWzavCXeW1vmyorUzkY2AZarP81lF-vYacY/edit"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfodeqfJkOLMp7-1DF-ek0ZEbNvF0_36oUbOXuHAxdcrXU3EQ/viewform?embedded=true"
                 style={{
                   fontWeight: "bold",
                   color: "rgb(8, 138, 252)",
