@@ -10,11 +10,7 @@ function About() {
 
         <div className="container">
           <div className="row">
-            <div
-              className="col-md-6"
-              
-              
-            >
+            <div className="col-md-6">
               <h1 className="i30">i30 Degree</h1>
               <p className="i30p">
                 Welcome to i30 Degree Electronics Services and Industrial
@@ -23,11 +19,7 @@ function About() {
                 to delivering quality and satisfaction to our valued customers.
               </p>
             </div>
-            <div
-              className="col-md-6"
-              
-              
-            >
+            <div className="col-md-6">
               <h1 className="i30">Mission</h1>
               <p className="i30p">
                 At i30 Degree Electronics Services and Industrial Supplies

@@ -65,14 +65,14 @@ function Contact() {
               Feel free to send me an{" "}
               <a
                 className="no-decoration"
-                href="mailto:j.marajas@gmail.com"
+                href="https://docs.google.com/forms/d/1AhKb3f8itWzavCXeW1vmyorUzkY2AZarP81lF-vYacY/edit"
                 style={{
                   fontWeight: "bold",
                   color: "rgb(8, 138, 252)",
                   textDecoration: "none",
                 }}
               >
-                email
+                contact information
               </a>{" "}
               or schedule a{" "}
               <a

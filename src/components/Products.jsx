@@ -32,14 +32,8 @@ function Product() {
               </div>
             </nav>
             <Routes>
-              <Route
-                path="/engineering&consultancy"
-                element={<EngineerAndConsultancy />}
-              />
-              <Route
-                path="/construction&installation"
-                element={<ConstructionAndInstallation />}
-              />
+              <Route path="/engineering&consultancy" element={<EngineerAndConsultancy />} />
+              <Route path="/construction&installation" element={<ConstructionAndInstallation />}/>
               <Route path="/preventivemaintenance" element={<Preventive />} />
               <Route path="/fabrication" element={<Fabrication />} />
             </Routes>
